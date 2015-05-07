@@ -1,8 +1,19 @@
-sidebar {
-	color: blue;
+#sidebar 
+{
+	
+}
+
+#sidebar ul
+{
+	color: black;
 	width: 100px;
 	border-style: solid;
 	border-width: 3px;
 	list-style-type: none;
 	padding-left: 0pt;
+}
+
+#sidebar ul li
+{
+
 }
