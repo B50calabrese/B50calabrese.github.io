@@ -1,19 +1,84 @@
-#sidebar 
-{
-	
+/* This is set the style for the entirety of the document. We want the entire
+   website to span the entirety of the browser's window. We also want a 
+   consistent text color and background color. */
+body,
+html {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: #a7a09a;
 }
 
-#sidebar ul
-{
-	color: black;
-	width: 100px;
-	border-style: solid;
-	border-width: 3px;
-	list-style-type: none;
-	padding-left: 0pt;
+/* This sets the style for the actual wrapper div. By setting the width and
+   setting the margin to auto, this will subtract the width of wrap from the
+   actual width of the browser window so that our content doesn't take up the
+   whole page. */
+#wrap {
+	width: 750px;
+	margin: 0 auto;
+	background: #99c;
 }
 
-#sidebar ul li
-{
+#header {
+	background:#ddd;
+	padding: 5px 10px;
+}
 
+h1 {
+	margin: 0;
+}
+
+#nav {
+	background:#c99;
+	padding: 5px 10px;
+}
+
+/* We do this to make the nav bar horizontal and to remove styling. */
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#nav li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+/* By floating left and setting the width to 500 pixels it will force the
+   sidebar to the right of the actual content of the page. Note the width is 480
+   because of the padding, though with it it adds to 500*/
+#main {
+	background:#9c9;
+	float: left;
+	width: 480px;
+	padding: 10px;
+}
+
+h2 {
+	margin:0 0 1em;
+}
+
+/* We float the sidebar right and set its width to be the width of the wrapper
+   minus the content to force the sidebar to the right of the content. */
+#sidebar {
+	background:#99c;
+	float: right;
+	width: 230px;
+	padding: 10px;
+}
+
+/* By clearing, this will force the footer to not have any elements next to it.
+   Since we floated the main and sidebar divs, this removes them from the
+   document flow and thus the footer wouldn't be in the right place, which is
+   why we force the clear. */
+#footer {
+	background:#cc9;
+	clear: both;
+	padding: 5px 10px;
+}
+
+#footer p {
+	margin: 0;
 }
