@@ -1,4 +1,4 @@
 name: Antonio Calabrese's Website
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-sass_dir: _sass
+sass_dir: _sass/
