@@ -18,3 +18,17 @@ layout: default
 <div class="tutorialContent">
   {{ content }}
 </div>
+
+<div class="tutorialLinks">
+	<div class="tutorialLeftLink">
+		<a href="{{ page.prevLesson }}" alt="{{ page.prevLessonName }}">
+			{{ page.prevLessonName }}
+		</a>
+	</div>
+
+	<div class="tutorialRightLink">
+		<a href="{{ page.nextLesson }}" alt="{{ page.nextLessonName }}">
+			{{ page.nextLessonName }}
+		</a>
+	</div>
+</div>
