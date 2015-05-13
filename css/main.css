@@ -127,13 +127,13 @@ ul.posts li {
 }
 
 .tutorialLinks {
-
+    font-size: 1.2em;
 }
 
 .tutorialRightLink {
-
+    float: right;
 }
 
 .tutorialLeftLink {
-    
+    float: left;
 }
