@@ -99,3 +99,12 @@ ul.posts li {
 .floatLeftImg img {
     display: block;
 }
+
+.tutorialContent {
+
+}
+
+.tutorialNav {
+    float: right;
+    width: 250px;
+}
