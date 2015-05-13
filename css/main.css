@@ -73,12 +73,18 @@ ul.posts li {
     background: rgba(29, 106, 154, 0.72);
     color: #fff;
     top: 0;
+    left: 0;
     right: 0;
     display: block;
     margin: auto;
 
     visibility: hidden;
     opacity: 0;
+}
+
+.imgDescription p {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .imgWrap:hover .imgDescription {
