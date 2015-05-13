@@ -54,6 +54,11 @@ ul.posts li {
     list-style: none;
 }
 
+.imgWrap {
+    height: 256px;
+    width: 256px;
+}
+
 .imgDescription {
     position: absolute;
     top: 0;
