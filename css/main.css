@@ -80,11 +80,9 @@ ul.posts li {
 
     visibility: hidden;
     opacity: 0;
-}
 
-.imgDescription p {
-    display: inline-block;
     vertical-align: middle;
+    font-size: 1.2em;
 }
 
 .imgWrap:hover .imgDescription {
