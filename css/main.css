@@ -60,6 +60,12 @@ ul.posts li {
     width: 256px;
 }
 
+.imgWrap img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .imgDescription {
     position: absolute;
     height: 256px;
