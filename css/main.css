@@ -73,7 +73,10 @@ ul.posts li {
     background: rgba(29, 106, 154, 0.72);
     color: #fff;
     top: 0;
+    right: 0;
     display: block;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
 
