@@ -89,3 +89,11 @@ ul.posts li {
     visibility: visible;
     opacity: 1;
 }
+
+.floatLeftImg {
+    float: left;
+}
+
+.floatLeftImg img {
+    display: block;
+}
