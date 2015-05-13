@@ -75,8 +75,8 @@ ul.posts li {
     top: 0;
     right: 0;
     display: block;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-right: auto;
     margin-left: auto;
 
