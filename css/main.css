@@ -68,14 +68,18 @@ ul.posts li {
 
 .imgDescription {
     position: absolute;
-    height: 256px;
-    width: 256px;
+    height: 200;
+    width: 200px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background: rgba(29, 106, 154, 0.72);
     color: #fff;
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 
     visibility: hidden;
     opacity: 0;
