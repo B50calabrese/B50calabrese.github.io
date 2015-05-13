@@ -1,5 +1,7 @@
-var FINAL_BACKGROUND_COLOR = 'd0d0d0';
-var current_background = 16;
+var FINAL_BACKGROUND_COLOR = 205;
+var START_BACKGROUND_COLOR = 255;
+var INTERVAL = 10;
+var current_background = 255;
 var fade_in_call;
 var fade_out_call;
 
@@ -10,11 +12,10 @@ function fade_in(div1) {
 
 	// The hexadecimal string representation of the number
 	var str_background = current_background.toString(16);
-	div1.style.background = '#' + str_background + '0' + str_background + '0'
-			+ str_background + '0';
-	if (current_background != 13) {
-		current_background = current_background - 1;
-		fade_in_call = setTimeout(function() { fade_in(div1); }, 300);
+	div1.style.background = '#' + str_background + str_background + str_background;
+	if (current_background != FINAL_BACKGROUND_COLOR) {
+		current_background = current_background - INTERVAL;
+		fade_in_call = setTimeout(function() { fade_in(div1); }, 250);
 	}
 }
 
@@ -25,10 +26,9 @@ function fade_out(div1) {
 
 	// The hexadecimal string representation of the number
 	var str_background = current_background.toString(16);
-	div1.style.background = '#' + str_background + '0' + str_background + '0'
-			+ str_background + '0';
-	if (current_background != 16) {
-		current_background = current_background + 1;
-		fade_out_call = setTimeout(function() { fade_out(div1); }, 300);
+	div1.style.background = '#' + str_background + str_background + str_background;
+	if (current_background != START_BACKGROUND_COLOR) {
+		current_background = current_background + INTERVAL;
+		fade_out_call = setTimeout(function() { fade_out(div1); }, 250);
 	}	
 }
