@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+	<script src="/js/test.js"></script>
 	<head>
 		<title>{{ page.title }}</title>
 		<!-- link to main stylesheet -->
@@ -8,11 +9,31 @@
 	<body>
 		<nav>
     		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about/">About</a></li>
-        		<li><a href="/resume/">Resume</a></li>
-        		<li><a href="/blog/">Blog</a></li>
-        		<li><a href="/tutorials/">Tutorials</a></li>
+        		<li>
+        			<a href="/" onmouseover='fade_in(this)' onmouseout='fade_out(this)'>
+        				Home
+        			</a>
+        		</li>
+        		<li>
+        			<a href="/about/" onmouseover='fade_in(this)' onmouseout='fade_out(this)'>
+        				About
+        			</a>
+        		</li>
+        		<li>
+        			<a href="/resume/" onmouseover='fade_in(this)' onmouseout='fade_out(this)'>
+        				Resume
+        			</a>
+        		</li>
+        		<li>
+        			<a href="/tutorials/" onmouseover='fade_in(this)' onmouseout='fade_out(this)'>
+        				Tutorials
+        			</a>
+        		</li>
+        		<li>
+        			<a href="/blog/" onmouseover='fade_in(this)' onmouseout='fade_out(this)'>
+        				Blog
+        			</a>
+        		</li>
     		</ul>
 		</nav>
 		<div class="container">
