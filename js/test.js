@@ -1,9 +1,9 @@
-document.getElementById('test2').onmouseover=function(){
-    underline_function(document.getElementById('test2'));
+document.getElementById('testId').onmouseover=function(){
+    underline_function(document.getElementById('testId'));
 };
 
-document.getElementById('test2').onmouseout=function(){
-    non_underline_function(document.getElementById('test2'));
+document.getElementById('testId').onmouseout=function(){
+    non_underline_function(document.getElementById('testId'));
 };
 
 function underline_function(div1) {
