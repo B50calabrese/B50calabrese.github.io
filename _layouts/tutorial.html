@@ -1,12 +1,6 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-
-<div class="tutorialContent">
-  {{ content }}
-</div>
-
 <div class="tutorialNav">
 	<ul>
 		{% for pg in site.pages %}
@@ -15,4 +9,8 @@ layout: default
 			{% endif %} <!-- end if of tutorial title test -->
 		{% endfor %} <!-- end for of loop through pages -->
 	</ul>
+</div>
+
+<div class="tutorialContent">
+  {{ content }}
 </div>
