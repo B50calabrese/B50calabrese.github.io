@@ -108,10 +108,15 @@ ul.posts li {
 }
 
 .tutorialContent {
-
-}
+    width: 64%;
+    margin-right: 1%;
+}  
 
 .tutorialNav {
     float: right;
-    width: 250px;
+    width: 35%;
+}
+
+.tutorialNav ul {
+    margin: 0px;
 }
