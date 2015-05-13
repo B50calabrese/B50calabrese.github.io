@@ -127,6 +127,8 @@ ul.posts li {
 }
 
 .tutorialLinks {
+    clear: both;
+    margin: 5px;
     font-size: 1.2em;
 }
 
