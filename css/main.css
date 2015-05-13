@@ -55,6 +55,7 @@ ul.posts li {
 }
 
 .imgWrap {
+    position: relative;
     height: 256px;
     width: 256px;
 }
