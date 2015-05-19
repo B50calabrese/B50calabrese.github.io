@@ -7,4 +7,54 @@ prevLessonName: Tutorial Description
 nextLesson: /tutorials/androidLauncher/lesson1
 nextLessonName: Lesson 1
 ---
-<p> Lesson number 0 </p>
+<p> Lesson number 0 - Getting Started</p>
+
+<p> For this lesson I will be covering basic details about how to create a
+	project and how exactly we will be displaying all of the applications a user
+	has installed. I recommend the use of Android Studio when doing an Android
+	application, as it is very useful at speeding up the development process of 
+	any app. By searching on Google for Android Studio you should find plenty of
+	resources on how exactly you can install Android Studio for your respective
+	platform.
+</p>
+
+<p>     Once you have Android Studio, or your development platform that you
+prefer,     installed, we are going to want to create the basic application just
+to get     a simple baseline. We are going to want to target an SDK that allows
+the     most of users access to our technology, so I prefer at the time of
+writing     this piece to target SDK version 18, Jelly Bean, this means any SDK
+version     from 18 onwards will support our application. Once there we just
+need to     make sure no Activity is made for us as we want to do that from
+scratch     ourselves. Based on your development environment, there should be
+some files     that were automatically created, specifically the Android
+Manifest file. We     are going to modify the Manifest to add an Activity that
+will represent the     launcher's main screen similar to below. </p>
+
+<div class="codeSnip">
+	<p>
+		&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		    package="acalabrese.com.absolutelauncher"&gt;
+
+		    &lt;application android:allowBackup="true" android:label="@string/app_name"
+		        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme"&gt;
+
+		        &lt;activity android:name="acalabrese.com.absolutelauncher.LauncherActivity"
+		            android:label="Absolute Launcher"
+		            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen"
+		            android:launchMode="singleTask"
+		            android:stateNotNeeded="true"&gt;
+
+		            &lt;intent-filter&gt;
+		                &lt;action android:name="android.intent.action.MAIN" /&gt;
+		                &lt;category android:name="android.intent.category.HOME" /&gt;
+		                &lt;category android:name="android.intent.category.DEFAULT" /&gt;
+		            &lt;/intent-filter&gt;
+
+		        &lt;/activity&gt;
+		        
+		    &lt;/application&gt;
+
+		&lt;/manifest&gt;
+
+	</p>
+</div>
