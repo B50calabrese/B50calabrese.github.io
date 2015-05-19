@@ -9,7 +9,8 @@ nextLessonName: Lesson 1
 ---
 <p> Lesson number 0 - Getting Started</p>
 
-<p> For this lesson I will be covering basic details about how to create a
+<p> 
+	For this lesson I will be covering basic details about how to create a
 	project and how exactly we will be displaying all of the applications a user
 	has installed. I recommend the use of Android Studio when doing an Android
 	application, as it is very useful at speeding up the development process of 
@@ -18,19 +19,43 @@ nextLessonName: Lesson 1
 	platform.
 </p>
 
-<p>     Once you have Android Studio, or your development platform that you
-prefer,     installed, we are going to want to create the basic application just
-to get     a simple baseline. We are going to want to target an SDK that allows
-the     most of users access to our technology, so I prefer at the time of
-writing     this piece to target SDK version 18, Jelly Bean, this means any SDK
-version     from 18 onwards will support our application. Once there we just
-need to     make sure no Activity is made for us as we want to do that from
-scratch     ourselves. Based on your development environment, there should be
-some files     that were automatically created, specifically the Android
-Manifest file. We     are going to modify the Manifest to add an Activity that
-will represent the     launcher's main screen similar to below. </p>
+<p> 
+	Once you have Android Studio, or your development platform that you prefer,
+	installed, we are going to want to create the basic application just to get
+	a simple baseline. We are going to want to target an SDK that allows the
+	most of users access to our technology, so I prefer at the time of writing
+	this piece to target SDK version 18, Jelly Bean, this means any SDK version
+	from 18 onwards will support our application. Once there we just need to
+	make sure no Activity is made for us as we want to do that from scratch
+	ourselves. Based on your development environment, there should be some files
+	that were automatically created, specifically the Android Manifest file. We
+	are going to modify the Manifest to add an Activity that will represent the
+	launcher's main screen similar to below.
+</p>
 
 <div class="codeSnip">
 	<img src="/images/tutorials/customLauncher/lesson0/manifest.png"
 		alt="Manifest Code Snip" />
 </div>
+
+<p>
+	In terms of what was added to the Manifest, the most important things are
+	between the activity tags. For the Activity itself, we have four important
+	parts. The first thing to notice is the label. The label is the human
+	readible name for the application, and this will become very important when
+	we go to display the names of all the applications currently on the system.
+	Second, our theme is meant to display the application taking up as much room
+	on the screen as possible, since it is meant to be driving the user's focus
+	to the application that they want to use at the time. Third is the
+	launchMode, which in this case is singleTask and it forces the Android
+	system to only allow for one instance of this Activity to run at any given
+	time. Fourth is stateNotNeeded attribute which is used to signal to the
+	Android system whether or not to save information when the Activity is
+	killed and restarted, which we set to true in order to ensure that it
+	doesn't get removed if it somehow crashes in the future. In between the
+	actual activity tags are the intent-filter tags. Inside these
+	tags we add to special categories, android.intent.category.HOME and
+	android.intent.category.DEFAULT, which signal to the Android operatiing
+	system that this activity should be an option when clicking on the Home
+	button, thus making it behave like a launcher.
+</p>
