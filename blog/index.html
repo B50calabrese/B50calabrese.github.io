@@ -3,8 +3,13 @@ layout: default
 title: My Blog
 ---
 <h1>{{ page.title }}</h1>
+<p class="blurb">
+	Welcome to my tech talks area! Below are a list of topics in Computer Science that I discuss. Each Tech Talk is
+	different and is meant to be an exploration into a topic I find interesting. The topics can range from the simple
+	to the complex, from technologies to code. Some of the talks will contain code that will be contained within a
+	Github repository shared amongst all talks. Enjoy!
+</p>
 <ul class="posts">
-
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
   {% endfor %}
