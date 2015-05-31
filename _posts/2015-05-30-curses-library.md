@@ -66,7 +66,7 @@ will start with a simple square like maze, which we know how to display now usin
 from the previous example.
 
 We will start out by drawing a simple maze, which the full source code can be found at the link
-located at the bottom of this tutorial (TODO MAKE SURE TO ADD THIS LINK). We will use a 2D array
+located at the bottom of this tutorial. We will use a 2D array
 of characters to represent the maze. From there we can do similar to the previous example by
 initializing the screen, turning off certain features, clearing the display and then displaying 
 the maze. To display the maze, we can simply use a for loop within another for loop to move the
@@ -79,3 +79,17 @@ return back to normal. Once done my maze looks like so:
 	<img src="/images/techtalks/curses/simple_maze.png"
 		alt="Simple Maze" />
 </div>
+
+Once that is done the next step is getting the user to display. To do so I use two integer
+variables to track the player's current position. This will be used to display the player, but
+wait what about input???? Well input is rather simple, to get a single character we can use the
+function getch which returns the character of the key that was pressed. Once we get that
+character we can change the player's position variables, then we can replace the user's old
+position with the maze's value at that position and then display the player at their new location.
+The entire source code can be found at the following Github:
+
+<a href="https://github.com/B50calabrese/TechTalkCode">Code Link</a>
+
+And so there you have it, a simple maze-like game made using the super powerful curses library!
+I have included another game I made that is a little more detailed in the repository as well so
+that you can see exactly what else can be made and how complex you can make your UI.
