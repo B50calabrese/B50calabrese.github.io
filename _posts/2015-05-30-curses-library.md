@@ -16,3 +16,19 @@ the past to gain an appreciation for the technologies now, and of course it look
 During this talk I will show you how to use the curses library and make a simple game with
 it. From there you are free to use your knowledge to create a more complex game, like 
 Dwarf Fortress or Rogue!
+
+The first step to being a curses library ninja is to install the correct library files. To do
+so on Linux you just need to execute the command:
+
+sudo apt-get install libncurses5-dev
+
+On other operating systems, such as Windows or Mac, I am unsure on how to do so, though there
+are several tutorials online that will show you which files to install.
+
+Once we have the headers installed, we can start by making a simple game. To do so you are going
+to want to create a simple file like so:
+
+<div class="codeSnip">
+	<img src="/images/tutorials/techtalks/curses/first_window_pic.png"
+		alt="Basic Curses Output" />
+</div>
