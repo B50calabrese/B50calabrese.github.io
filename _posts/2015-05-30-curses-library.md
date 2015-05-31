@@ -38,6 +38,44 @@ Once you have that file created, we need to compile it. To do so we can run the 
 gcc file_name.c -lncurses -o output_file_name
 
 Note that this will work on Linux, but Windows and Mac users should look into how they can do it
-on their respective platforms. Once done, you should see an X output to the terminal you are in.
-Congratulations!!! You have taken your first steps towards being a curses user, but what does
-this all mean. Okay, let's walk through the code one line at a time.
+on their respective platforms. Once done and you run your program, you should see an X output to
+the terminal you are in. Congratulations!!! You have taken your first steps towards being a
+curses user, but what does this all mean. Okay, let's walk through the code one line at a time.
+
+The first two lines in the file are include statements, used to actually include the code that
+is the curses library. From there we jump straight into our main function. To actually use curses
+the program needs to take control of output away from the terminal itself, and to do so we call
+the function initscr. This function will take control and set up various parameters to help us
+with our cause. After that is a pair of commands noecho and curs_set. Noecho is a function that
+stops the input from the user being sent to standard out as well. The curs_set function sets the
+visibility of the cursor depending on the parameter that is passed in, in this case we are setting
+the visibility to FALSE thereby removing the cursor. Next we have the clear command which, as the
+name implies, is to clear the display so that we have a blank slate to work with. To actually
+start drawing things on the screen we use the move function to move the cursor to where we want
+to display things, and then call addch with the character we want to display as a parameter to 
+actually display it. Once we have prepared what we want to draw, we call refresh to update everything
+at one time. The next function call, usleep, is very important simply because without it the 
+program would terminate before you could ever see anything. Usleep is used to stop the program
+for a certain amount of time, in this case 3 seconds. Finally, once we are done with our mischief
+we want to return control back to the terminal and set everything back to do so by calling the
+function endwin.
+
+So now that we know the basics, let us make a simple game shall we! The idea for this game will
+be very simple, a maze-like game where the user will try to navigate a simple ASCII maze. We
+will start with a simple square like maze, which we know how to display now using the knowledge
+from the previous example.
+
+We will start out by drawing a simple maze, which the full source code can be found at the link
+located at the bottom of this tutorial (TODO MAKE SURE TO ADD THIS LINK). We will use a 2D array
+of characters to represent the maze. From there we can do similar to the previous example by
+initializing the screen, turning off certain features, clearing the display and then displaying 
+the maze. To display the maze, we can simply use a for loop within another for loop to move the
+cursor to a new spot indicated by the counters in the for loop, and then adding the character
+located in the 2D array at the given counter positions. Once we have added all of those characters
+we can refresh the display, sleep for a determined amount of time, and then end the window to 
+return back to normal. Once done my maze looks like so:
+
+<div class="codeSnip">
+	<img src="/images/techtalks/curses/simple_maze.png"
+		alt="Simple Maze" />
+</div>
