@@ -29,6 +29,15 @@ Once we have the headers installed, we can start by making a simple game. To do 
 to want to create a simple file like so:
 
 <div class="codeSnip">
-	<img src="/images/tutorials/techtalks/curses/first_window_pic.png"
+	<img src="/images/techtalks/curses/first_window_pic.png"
 		alt="Basic Curses Output" />
 </div>
+
+Once you have that file created, we need to compile it. To do so we can run the command:
+
+gcc file_name.c -lncurses -o output_file_name
+
+Note that this will work on Linux, but Windows and Mac users should look into how they can do it
+on their respective platforms. Once done, you should see an X output to the terminal you are in.
+Congratulations!!! You have taken your first steps towards being a curses user, but what does
+this all mean. Okay, let's walk through the code one line at a time.
