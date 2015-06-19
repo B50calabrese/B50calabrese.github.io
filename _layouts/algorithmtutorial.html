@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+
+<div class="tutorialNav">
+	<ul>
+	  <li>
+	    Sorters
+	      <ul>
+	        <li>Test1</li>
+	        <li>Test2</li>
+		    <ul>
+		</li>
+	</ul>
+</div>
+
+<div class="tutorialContent">
+  {{ content }}
+</div>
+
+<div class="tutorialLinks">
+	<div class="tutorialLeftLink">
+		<a href="{{ page.prevLesson }}" alt="{{ page.prevLessonName }}">
+			{{ page.prevLessonName }}
+		</a>
+	</div>
+
+	<div class="tutorialRightLink">
+		<a href="{{ page.nextLesson }}" alt="{{ page.nextLessonName }}">
+			{{ page.nextLessonName }}
+		</a>
+	</div>
+</div>
