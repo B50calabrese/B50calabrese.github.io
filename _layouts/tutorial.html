@@ -6,17 +6,17 @@ layout: default
 <div class="tutorialNav">
 	<ul>
 		{% for pg in site.pages %}
-			{% if pg.tutorialTitle == page.tutorialTitle %}
-				<li>
-					<a href="{{ pg.url }}">{{ pg.title }}</a>
-				</li>
-			{% endif %} <!-- end if of tutorial title test -->
+		{% if pg.tutorialTitle == page.tutorialTitle %}
+		<li>
+			<a href="{{ pg.url }}">{{ pg.title }}</a>
+		</li>
+		{% endif %} <!-- end if of tutorial title test -->
 		{% endfor %} <!-- end for of loop through pages -->
 	</ul>
 </div>
 
 <div class="tutorialContent">
-  {{ content }}
+	{{ content }}
 </div>
 
 <div class="tutorialLinks">
